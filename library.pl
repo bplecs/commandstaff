@@ -1,8 +1,4 @@
-
-
-read_configuration_file()
-	{
-
+sub read_configuration_file {
 	# initialize configuration array
 	my @config = (); 
 
@@ -13,7 +9,6 @@ read_configuration_file()
 
 	# read system default
 	while (my $config_line = $config_fh) { 
-		{
 		# strip newline
 		chomp($config_line); 
 		# read equals-separated label and value pair
@@ -32,5 +27,5 @@ read_configuration_file()
 
 	}
 
-
+1;
 
